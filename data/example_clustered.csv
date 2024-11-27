@@ -1,0 +1,38 @@
+Summary;Issue key
+Cluster items distance: 0.4444
+Items list not rendering properly;9
+Items list – broken link to css file;10
+Items list should contain link to item detail;11
+
+
+
+
+Cluster items distance: 0.5099
+Orders table should have column buyer;1
+Orders table have broken sorting for column date;4
+Orders table – order by date does not work;5
+Orders table sorting error;6
+When clicking order detail from table, it is not working;7
+Customer orders sometimes firing Access right error even for customers that own the order;12
+Customer can see orders that does not belong to them;13
+Customer cant cancel the order – Access Forbidden;14
+
+
+
+
+Cluster items distance: 0.5127
+Edit items is missing editing description;15
+When editing the items, user cant change item image;16
+
+
+
+
+Cluster items distance: 0.5592
+Customer form don’t allow to change customer name;2
+Implement edit name functionality for customer;3
+Customer form validation for birth date;8
+
+
+
+
+Miscelaneous cluster

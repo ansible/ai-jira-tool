@@ -1,5 +1,13 @@
-# Ignore the data folder
-data/
+# Ignore all files inside the data folder
+data/*
+
+# Allow the data folder itself
+!data/
+
+# Exclude (keep) the specific file data/example.csv
+!data/example.csv
+!data/example_clustered.csv
+!data/example_clustered.html
 
 # Ignore potential data tarball, zip, or other compressed files so they don't get added to the repository
 data.*

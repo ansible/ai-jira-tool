@@ -1,7 +1,7 @@
  #!/bin/bash
 
 # Define the image name
-IMAGE_NAME="llm-tool_image"
+IMAGE_NAME="ai-jira-tool-image"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"  # Directory of this script
 
 # Check if Docker or Podman is installed

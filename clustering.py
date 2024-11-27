@@ -301,17 +301,17 @@ while True:
 
                 # Write miscellaneous cluster
                 htmlfile.write(f'<tr class="cluster-header"><td colspan="{len(header)}">Miscellaneous cluster</td></tr>\n')
+                
+                # Write the header row
+                htmlfile.write('<tr>')
+                for col_name in header:
+                    htmlfile.write(f'<th>{html.escape(col_name)}</th>')
+                htmlfile.write('</tr>\n')
+                
                 for cluster_id in sorted_cluster_ids:
                     indices = cluster_indices[cluster_id]
-
+                    
                     if len(indices) == 1:
-
-                         # Write the header row
-                        htmlfile.write('<tr>')
-                        for col_name in header:
-                            htmlfile.write(f'<th>{html.escape(col_name)}</th>')
-                        htmlfile.write('</tr>\n')
-
                         for idx in indices:
                             htmlfile.write('<tr>')
                             cell_id = -1

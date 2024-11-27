@@ -1,18 +1,8 @@
 #!/bin/bash
 
-# Define the folder name
-FOLDER="data"
-
-# Check if the folder exists
-if [ ! -d "$FOLDER" ]; then
-  echo "Folder '$FOLDER' not found. Creating it now..."
-  mkdir "$FOLDER"
-  echo "Folder '$FOLDER' has been created."
-fi
-
 # Set the image name and container name
-IMAGE_NAME="llm-tool_image"
-CONTAINER_NAME="llm-tool_container"
+IMAGE_NAME="ai-jira-tool-image"
+CONTAINER_NAME="ai-jira-tool-container_$(date +%s | md5sum | head -c 8)"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"  # Directory of this script
 
 # Check if Docker or Podman is installed
