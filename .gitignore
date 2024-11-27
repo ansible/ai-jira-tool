@@ -1,0 +1,12 @@
+# Ignore the data folder
+data/
+
+# Ignore potential data tarball, zip, or other compressed files so they don't get added to the repository
+data.*
+
+# Ignore the myenv folder
+myenv/
+
+# Optional: Ignore other unnecessary files or folders
+*.log
+*.tmp
