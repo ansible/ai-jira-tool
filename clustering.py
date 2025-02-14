@@ -135,7 +135,7 @@ with open(input_file, 'r',  encoding='utf-8') as file:
 
     for row in rows:
         line = ''
-        
+
         for header_item in header_dict:
             if header_item in columns:
                 col_num = header_dict[header_item]
@@ -151,7 +151,7 @@ sys.stdout.flush()
 model = SentenceTransformer('all-mpnet-base-v2')
 embeddings = model.encode(lines)
 embeddings = np.array(embeddings)  # Ensure embeddings is a NumPy array
-
+# line 155 not used in API
 while True:
     clustering_model = AgglomerativeClustering(
             n_clusters=None,
@@ -301,16 +301,16 @@ while True:
 
                 # Write miscellaneous cluster
                 htmlfile.write(f'<tr class="cluster-header"><td colspan="{len(header)}">Miscellaneous cluster</td></tr>\n')
-                
+
                 # Write the header row
                 htmlfile.write('<tr>')
                 for col_name in header:
                     htmlfile.write(f'<th>{html.escape(col_name)}</th>')
                 htmlfile.write('</tr>\n')
-                
+
                 for cluster_id in sorted_cluster_ids:
                     indices = cluster_indices[cluster_id]
-                    
+
                     if len(indices) == 1:
                         for idx in indices:
                             htmlfile.write('<tr>')
