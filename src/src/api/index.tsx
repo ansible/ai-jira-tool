@@ -1,0 +1,1 @@
+export { JiraToolAPI } from './JiraTool';
